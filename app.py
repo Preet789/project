@@ -17,8 +17,15 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 import pickle
+import gdown
+url_stored_data = 'https://drive.google.com/uc?id=1pim6rKyVM8K_nGPNtPkI3dwh7_zcSzJY'
+gdown.download(url_stored_data, 'stored_data.pkl', quiet=False)
 
+# Load the stored_data.pkl file
+with open('stored_data.pkl', 'rb') as f:
+        stored_data = pickle.load(f)
 def get_similar_images(image_path, resnet, lda):
+  
     # Load pre-trained models and data
     features_lda = np.load('features_lda.npy')
     labels = np.load('labels.npy')
