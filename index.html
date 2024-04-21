@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Similarity Search</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body style="background-color: #f0f8ff;">
+    <header>
+        <h1>Image Similarity Search</h1>
+    </header>
+
+    <div class="container">
+        <section id="upload-section">
+            <h2>Upload an Image</h2>
+            <form method="post" action="/" enctype="multipart/form-data">
+                <input type="file" name="file">
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+
+        <section id="similar-images-section">
+            <h2>Similar Images</h2>
+            <div class="similar-images-grid">
+                {% for path in similar_images_paths %}
+                <div class="image-container">
+                    <img src="{{ path }}" alt="Similar Image">
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+</body>
+</html> -->

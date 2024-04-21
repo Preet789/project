@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similar Images</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Similar Images</h1>
+    {% for i in range(1, 6) %}
+        <img src="../static/similar_images/similar_images_{{ i }}/similar_image_{{ i }}.jpg" alt="Similar Image" style="height: 200px;">
+    {% endfor %}
+</body>
+</html>

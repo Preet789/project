@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    text-align: center;
+    padding: 0;
+    background-color: #ecb744; /* Light skin tone background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Main container styles */
+.container {
+    max-width: 600px;
+    padding: 20px;
+}
+
+/* Upload section styles */
+.upload-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.upload-box {
+    border: 2px dashed #240c42;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.upload-text {
+    font-weight: bold; /* Make the text bold */
+    margin-bottom: 10px;
+}
+
+.upload-button {
+    background-color: #5c1fe9; /* Blue button color */
+    color: rgb(253, 252, 252);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.upload-button:hover {
+    background-color: #E9967A; /* Darker blue on hover */
+}
+
+/* Similar images section styles */
+.similar-images {
+    text-align: center;
+}
+
+.similar-images-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+}
+
+/* Image grid styles */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual image styles */
+img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #69aaff;
+    padding: 5px;
+}
+
+/* Image label styles */
+.image-label {
+    font-weight: bold;
+    margin-top: 20px;
+}
